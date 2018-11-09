@@ -3,7 +3,25 @@ root@van-201738-pc:/home/aiyan# curl http://172.18.2.169
 
 curl: (56) Recv failure: Connection reset by peer
 
+or 
+# ip route add default via 172.18.43.1
 
+WANOPT config Summary:
+Server side: enable the explict-web proxy ( at server's in-coming port), and setup tunnel for client 
+Wanopt profile:  auth+protocol  
+Client:
+1) static config:  identification: setting(local of host-id)+ peers (remote)
+2) enable wanopt at firewall policy 
+Server: 
+1) firewall policy for wanopt
+2) explict web-proxy with type wanopt
+
+Check and debug:
+1) d wad tunnel list:  ( after the traffice from client)
+2)  hard-disk :  FG201E4Q17902940 # d disktest device
+
+
+======
 
 16343: 2018-11-07 11:41:17 <00238> firmware FortiGate-301E v6.2.0,build0781b0781,181102 (interim) 
 16344: 2018-11-07 11:41:17 (Release)
