@@ -7,7 +7,12 @@ public class LOGGER {
 		System.out.println(mesg + obj +" :: "+ obj2);
 	}
 	
-	static void info(String mesg, Object ...obj) {
+	static void info(String mesg) {
+
+		System.out.println(mesg);
+	}
+	
+	public static void info(String mesg, Object ...obj) {
 		
 		 
 		
@@ -17,7 +22,7 @@ public class LOGGER {
 		System.out.println(mesg);
 	}
 	
-	static String byteArray2String(byte[] B, int length) {
+  public static String byteArray2String(byte[] B, int length) {
 		
 		StringBuffer sb = new StringBuffer();
 		for ( int i=0; i<length; i++) {
