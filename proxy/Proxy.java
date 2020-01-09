@@ -45,9 +45,11 @@ public class Proxy implements Runnable {
             	
             	mid++;
             	output.append((char) bytesRead);
-            	if ( mid == 3)
-            		in.close(); // sent FIN if w/o setSoLinger
-//            		out.close(); //sent RST ( with setSoLinger)
+            	if ( mid == AppMain.midReset)
+            		if ( !AppMain.isLeft)
+            			in.close(); //  sent RST back,sent FIN if w/o setSoLinger
+            		else // proxy-A
+            			out.close(); //sent RST ( with setSoLinger)
             
             	else 
                     outputStream.write(reply, 0, bytesRead);
