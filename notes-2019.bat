@@ -76,12 +76,7 @@ end
 
 
 
-0317
 
-     Account id: ftnt
-User name    Password    Access key ID                                                                                             Secret access key Console login link
-pdhanapal    awsqa123         AKIARZJ546U4JR3ZDSPF                           piE1frFpX+26Ka1dNeAL6u9pnSJstN7Q+ST3RbNf
-https://ftnt.signin.aws.amazon.com/console
 
 #!/bin/bash
 
