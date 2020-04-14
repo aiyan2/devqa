@@ -271,16 +271,6 @@ wad user:
 firewall user: ( synced ..)
 group: mantined by firewall user.
 
--593365: 101E reproduce the customer issue of wad repeating crashing                    100%
--589065 FSSO-based NTLM sessions from explicit proxy do not respect timeout             100%  
--582755, 593220, 593221, 593222, 593223, 589503, 594246
-                  Additional status for downloaded external feed                        100%
--wad simplification: part2 ( explicict-web proxy):                                      100%
--594237, Slow download speed in proxy-mode compared to flow-mode                        50%
-
-
-
-
 
 1114
 Open the Active Directory Users and Computers snap-in
