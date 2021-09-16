@@ -1,0 +1,70 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            d0:2d:dc:f0:5f:25:05:0d
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=thirdca.devqa.net, C=CA, O=FFF
+        Validity
+            Not Before: Aug 15 22:00:00 2019 GMT
+            Not After : Aug 12 22:00:00 2029 GMT
+        Subject: CN=client.deevqa.net, C=CA, O=F
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:ac:60:19:ed:c8:5c:50:07:ae:2f:d4:30:8e:34:
+                    ff:65:90:4a:71:f1:85:32:77:71:5b:16:9a:a0:f9:
+                    32:63:3c:fe:48:20:07:b0:4a:2c:9b:bf:c0:fa:da:
+                    77:9d:6c:7d:f0:1e:4c:7e:02:b9:9c:65:d7:ed:24:
+                    23:d5:f2:05:34
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                29:05:C8:79:D5:6A:52:75:BA:9C:38:F2:C1:F5:73:DA:92:36:2A:05
+            X509v3 Authority Key Identifier: 
+                5A:18:8C:80:15:9B:19:EC:CF:7F:C7:04:7E:A4:82:B2:B2:DF:7E:7C
+            X509v3 Key Usage: 
+                Digital Signature, Key Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 CRL Distribution Points: 
+                Full Name:
+                  URI:http://ca.devqa.net/thirdca.crl
+                Full Name:
+                  URI:http://ca.devqa.net/thirdca.crl
+            X509v3 Subject Alternative Name: 
+                DNS:www.devqa.net, DNS:www.devqa.org
+            Authority Information Access: 
+                CA Issuers - URI:http://ca.devqa.net/thirdca.crt
+                CA Issuers - URI:http://ca2.devqa.net/thirdca.crt
+                OCSP - URI:http://ocsp.devqa.net:9000/ocsp/
+                OCSP - URI:http://ocsp2.devqa.net:9000/ocsp/
+    Signature Algorithm: ecdsa-with-SHA256
+    Signature Value:
+        30:45:02:20:4e:9f:43:04:eb:99:a9:0b:0a:98:74:dc:f2:b2:
+        2d:01:dc:4b:34:0a:fb:bd:66:56:64:db:9f:2d:7c:73:d0:76:
+        02:21:00:81:b0:f5:c9:5d:44:05:23:ea:fb:9e:07:5e:9d:6e:
+        00:05:0a:5a:e6:dd:5f:a5:c6:56:25:1c:c8:90:e6:03:f3
+-----BEGIN CERTIFICATE-----
+MIIDIzCCAsmgAwIBAgIJANAt3PBfJQUNMAoGCCqGSM49BAMCMDcxGjAYBgNVBAMM
+EXRoaXJkY2EuZGV2cWEubmV0MQswCQYDVQQGEwJDQTEMMAoGA1UECgwDRkZGMB4X
+DTE5MDgxNTIyMDAwMFoXDTI5MDgxMjIyMDAwMFowNTEaMBgGA1UEAwwRY2xpZW50
+LmRlZXZxYS5uZXQxCzAJBgNVBAYTAkNBMQowCAYDVQQKDAFGMFkwEwYHKoZIzj0C
+AQYIKoZIzj0DAQcDQgAErGAZ7chcUAeuL9QwjjT/ZZBKcfGFMndxWxaaoPkyYzz+
+SCAHsEosm7/A+tp3nWx98B5MfgK5nGXX7SQj1fIFNKOCAb4wggG6MAkGA1UdEwQC
+MAAwHQYDVR0OBBYEFCkFyHnValJ1upw48sH1c9qSNioFMB8GA1UdIwQYMBaAFFoY
+jIAVmxnsz3/HBH6kgrKy3358MAsGA1UdDwQEAwIFoDATBgNVHSUEDDAKBggrBgEF
+BQcDAjBXBgNVHR8EUDBOMCWgI6Ahhh9odHRwOi8vY2EuZGV2cWEubmV0L3RoaXJk
+Y2EuY3JsMCWgI6Ahhh9odHRwOi8vY2EuZGV2cWEubmV0L3RoaXJkY2EuY3JsMCcG
+A1UdEQQgMB6CDXd3dy5kZXZxYS5uZXSCDXd3dy5kZXZxYS5vcmcwgcgGCCsGAQUF
+BwEBBIG7MIG4MCsGCCsGAQUFBzAChh9odHRwOi8vY2EuZGV2cWEubmV0L3RoaXJk
+Y2EuY3J0MCwGCCsGAQUFBzAChiBodHRwOi8vY2EyLmRldnFhLm5ldC90aGlyZGNh
+LmNydDAsBggrBgEFBQcwAYYgaHR0cDovL29jc3AuZGV2cWEubmV0OjkwMDAvb2Nz
+cC8wLQYIKwYBBQUHMAGGIWh0dHA6Ly9vY3NwMi5kZXZxYS5uZXQ6OTAwMC9vY3Nw
+LzAKBggqhkjOPQQDAgNIADBFAiBOn0ME65mpCwqYdNzysi0B3Es0Cvu9ZlZk258t
+fHPQdgIhAIGw9cldRAUj6vueB16dbgAFClrm3V+lxlYlHMiQ5gPz
+-----END CERTIFICATE-----

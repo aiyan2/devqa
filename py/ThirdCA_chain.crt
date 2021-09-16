@@ -1,0 +1,151 @@
+-----BEGIN CERTIFICATE-----
+MIICWTCCAgCgAwIBAgIUEMQ4klC63rfirqmJSH8kDL2hyLQwCgYIKoZIzj0EAwIw
+NDELMAkGA1UEBhMCVVMxCjAIBgNVBAoMAUYxGTAXBgNVBAMMEHJvb3RjYS5kZXZx
+YS5uZXQwHhcNMTkwNzE3MTgxMzQ1WhcNMjkwNzE0MTgxMzQ1WjA0MQswCQYDVQQG
+EwJVUzEKMAgGA1UECgwBRjEZMBcGA1UEAwwQcm9vdGNhLmRldnFhLm5ldDBZMBMG
+ByqGSM49AgEGCCqGSM49AwEHA0IABCj5R1uoaI5dNp/i9vDSRzXOkwfooVfTXEG4
+pFeKj+D7yRHd48Q4dcII7riHMPcQzBJPBPDD8AYDGZsem4RxnLijge8wgewwHQYD
+VR0OBBYEFGWtTSPS0XG3whzyS4I029LlvD06MB8GA1UdIwQYMBaAFGWtTSPS0XG3
+whzyS4I029LlvD06MDYGCCsGAQUFBwEBBCowKDAmBggrBgEFBQcwAoYaaHR0cDov
+L2NhLmRldnFhLm5ldC9jYS5jZXIwKwYDVR0fBCQwIjAgoB6gHIYaaHR0cDovL2Nh
+LmRldnFhLm5ldC9jYS5jcmwwGAYDVR0RBBEwD4INd3d3LmRldnFhLm5ldDAdBgNV
+HSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TBAUwAwEB/zAKBggqhkjO
+PQQDAgNHADBEAiBPzx/pGtUMJCZW1wEYhfcYNR+QXdY8S/EpnOX3FsBiOwIgInZs
+6A2cm2T9Y71pma2igjYULIqXIIoKPxuXNahCwQ4=
+-----END CERTIFICATE-----
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            d0:2d:dc:f0:5f:25:05:07
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C=US, O=F, CN=rootca.devqa.net
+        Validity
+            Not Before: Jul 17 18:49:43 2019 GMT
+            Not After : Jul 14 18:49:43 2029 GMT
+        Subject: CN=secondca.devqa.net, C=CA, O=FF
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:c3:d1:c9:d5:44:79:90:02:79:79:af:3b:e6:14:
+                    29:0a:18:24:35:60:92:d8:b5:97:f5:b2:29:db:00:
+                    1b:78:85:e4:2a:ae:ba:02:67:cf:d2:a5:a1:69:86:
+                    5e:95:e4:03:da:9a:8a:49:08:99:81:ae:8b:7e:1e:
+                    1e:4b:3a:3c:36
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                31:04:F7:E2:40:D9:2F:CD:CE:D8:0A:0D:1D:19:B1:86:DF:E3:8B:DC
+            X509v3 Authority Key Identifier: 
+                keyid:65:AD:4D:23:D2:D1:71:B7:C2:1C:F2:4B:82:34:DB:D2:E5:BC:3D:3A
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://ca.devqa.net/secondca.crl
+
+                Full Name:
+                  URI:http://ca2.devqa.net/secondca.crl
+
+            X509v3 Subject Alternative Name: 
+                DNS:secondca.devqa.net, DNS:secondca.devqa.org
+            Authority Information Access: 
+                OCSP - URI:http://ocsp.devqa.net/ocsp/
+                OCSP - URI:http://ocsp2.devqa.net/ocsp/
+
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:2b:d5:25:8b:19:22:c7:f3:c0:f1:e6:58:57:84:
+         16:d8:c5:5f:54:20:4d:9c:08:9d:5a:95:b8:f4:cd:aa:83:7f:
+         02:20:3e:14:a8:a3:7b:a4:2f:b6:a1:fa:e7:aa:d8:c6:06:28:
+         10:14:b1:c5:27:e5:32:78:1b:5b:14:bb:00:00:08:da
+-----BEGIN CERTIFICATE-----
+MIICqjCCAlGgAwIBAgIJANAt3PBfJQUHMAoGCCqGSM49BAMCMDQxCzAJBgNVBAYT
+AlVTMQowCAYDVQQKDAFGMRkwFwYDVQQDDBByb290Y2EuZGV2cWEubmV0MB4XDTE5
+MDcxNzE4NDk0M1oXDTI5MDcxNDE4NDk0M1owNzEbMBkGA1UEAwwSc2Vjb25kY2Eu
+ZGV2cWEubmV0MQswCQYDVQQGEwJDQTELMAkGA1UECgwCRkYwWTATBgcqhkjOPQIB
+BggqhkjOPQMBBwNCAATD0cnVRHmQAnl5rzvmFCkKGCQ1YJLYtZf1sinbABt4heQq
+rroCZ8/SpaFphl6V5APamopJCJmBrot+Hh5LOjw2o4IBRzCCAUMwDwYDVR0TAQH/
+BAUwAwEB/zAdBgNVHQ4EFgQUMQT34kDZL83O2AoNHRmxht/ji9wwHwYDVR0jBBgw
+FoAUZa1NI9LRcbfCHPJLgjTb0uW8PTowWgYDVR0fBFMwUTAmoCSgIoYgaHR0cDov
+L2NhLmRldnFhLm5ldC9zZWNvbmRjYS5jcmwwJ6AloCOGIWh0dHA6Ly9jYTIuZGV2
+cWEubmV0L3NlY29uZGNhLmNybDAxBgNVHREEKjAoghJzZWNvbmRjYS5kZXZxYS5u
+ZXSCEnNlY29uZGNhLmRldnFhLm9yZzBhBggrBgEFBQcBAQRVMFMwJwYIKwYBBQUH
+MAGGG2h0dHA6Ly9vY3NwLmRldnFhLm5ldC9vY3NwLzAoBggrBgEFBQcwAYYcaHR0
+cDovL29jc3AyLmRldnFhLm5ldC9vY3NwLzAKBggqhkjOPQQDAgNHADBEAiAr1SWL
+GSLH88Dx5lhXhBbYxV9UIE2cCJ1albj0zaqDfwIgPhSoo3ukL7ah+ueq2MYGKBAU
+scUn5TJ4G1sUuwAACNo=
+-----END CERTIFICATE-----
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            d0:2d:dc:f0:5f:25:05:08
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=secondca.devqa.net, C=CA, O=FF
+        Validity
+            Not Before: Jul 17 18:52:04 2019 GMT
+            Not After : Jul 14 18:52:04 2029 GMT
+        Subject: CN=thirdca.devqa.net, C=CA, O=FFF
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:c4:bc:54:78:8d:3e:f8:8a:8c:d8:cc:ea:de:35:
+                    e8:9d:70:e1:b7:08:f6:9f:9a:a2:5f:e9:13:3d:f8:
+                    0d:7f:da:09:6b:5a:5a:63:b8:24:48:b1:39:62:54:
+                    65:9a:9a:60:28:b4:af:a6:74:98:b6:5d:c9:de:3c:
+                    af:d5:64:bb:66
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                5A:18:8C:80:15:9B:19:EC:CF:7F:C7:04:7E:A4:82:B2:B2:DF:7E:7C
+            X509v3 Authority Key Identifier: 
+                keyid:31:04:F7:E2:40:D9:2F:CD:CE:D8:0A:0D:1D:19:B1:86:DF:E3:8B:DC
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://ca.devqa.net/secondca.crl
+
+                Full Name:
+                  URI:http://ca2.devqa.net/secondca.crl
+
+            X509v3 Subject Alternative Name: 
+                DNS:thirdca.devqa.net, DNS:thirdca.devqa.org
+            Authority Information Access: 
+                CA Issuers - URI:http://ca.devqa.net/secondca.crt
+                CA Issuers - URI:http://ca2.devqa.net/secondca.crt
+                OCSP - URI:http://ocsp.devqa.net/ocsp/
+                OCSP - URI:http://ocsp2.devqa.net/ocsp/
+
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:a8:d2:cb:b6:bf:8d:58:63:29:5d:42:20:4a:
+         d3:dd:8d:3e:db:26:c4:4e:89:17:e4:17:3d:ab:1d:26:f9:9e:
+         0a:02:21:00:f1:c5:50:b9:82:81:a2:91:49:56:ff:a0:72:47:
+         21:b3:fe:75:28:67:21:79:5b:41:27:06:b0:61:ae:97:31:be
+-----BEGIN CERTIFICATE-----
+MIIDDTCCArKgAwIBAgIJANAt3PBfJQUIMAoGCCqGSM49BAMCMDcxGzAZBgNVBAMM
+EnNlY29uZGNhLmRldnFhLm5ldDELMAkGA1UEBhMCQ0ExCzAJBgNVBAoMAkZGMB4X
+DTE5MDcxNzE4NTIwNFoXDTI5MDcxNDE4NTIwNFowNzEaMBgGA1UEAwwRdGhpcmRj
+YS5kZXZxYS5uZXQxCzAJBgNVBAYTAkNBMQwwCgYDVQQKDANGRkYwWTATBgcqhkjO
+PQIBBggqhkjOPQMBBwNCAATEvFR4jT74iozYzOreNeidcOG3CPafmqJf6RM9+A1/
+2glrWlpjuCRIsTliVGWammAotK+mdJi2XcnePK/VZLtmo4IBpTCCAaEwDwYDVR0T
+AQH/BAUwAwEB/zAdBgNVHQ4EFgQUWhiMgBWbGezPf8cEfqSCsrLffnwwHwYDVR0j
+BBgwFoAUMQT34kDZL83O2AoNHRmxht/ji9wwWgYDVR0fBFMwUTAmoCSgIoYgaHR0
+cDovL2NhLmRldnFhLm5ldC9zZWNvbmRjYS5jcmwwJ6AloCOGIWh0dHA6Ly9jYTIu
+ZGV2cWEubmV0L3NlY29uZGNhLmNybDAvBgNVHREEKDAmghF0aGlyZGNhLmRldnFh
+Lm5ldIIRdGhpcmRjYS5kZXZxYS5vcmcwgcAGCCsGAQUFBwEBBIGzMIGwMCwGCCsG
+AQUFBzAChiBodHRwOi8vY2EuZGV2cWEubmV0L3NlY29uZGNhLmNydDAtBggrBgEF
+BQcwAoYhaHR0cDovL2NhMi5kZXZxYS5uZXQvc2Vjb25kY2EuY3J0MCcGCCsGAQUF
+BzABhhtodHRwOi8vb2NzcC5kZXZxYS5uZXQvb2NzcC8wKAYIKwYBBQUHMAGGHGh0
+dHA6Ly9vY3NwMi5kZXZxYS5uZXQvb2NzcC8wCgYIKoZIzj0EAwIDSQAwRgIhAKjS
+y7a/jVhjKV1CIErT3Y0+2ybETokX5Bc9qx0m+Z4KAiEA8cVQuYKBopFJVv+gckch
+s/51KGcheVtBJwawYa6XMb4=
+-----END CERTIFICATE-----

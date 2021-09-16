@@ -1,0 +1,11 @@
+127.0.0.1       pc100.devqa.lab localhost	
+172.18.43.100   pc100.devqa.lab mail.devqa.lab www.devqa.lab
+127.0.1.1	pc100 #aiyan-virtual-machine
+172.18.80.35    fgt67.smb2016.lab
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
