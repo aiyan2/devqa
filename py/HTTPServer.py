@@ -2,6 +2,8 @@
  
 """ HTTP Server With Upload.
 Usage: 
+
+http get returns the list of the current dir where the httpserver starts
 http client by curl or any browser
 --- upload, using example:
 curl -F file=@/etc/hosts 172.18.43.100:8003
@@ -12,6 +14,7 @@ aiyan@pc100:~$ curl -F file=@/var/www/html/test/1g 172.18.43.100:8003 -s | grep 
  cd573cfaace07e7949bc0c46028904ff
 aiyan@pc100:~$ md5sum /var/www/html/test/1g
 cd573cfaace07e7949bc0c46028904ff  /var/www/html/test/1g
+
 
 
 """
