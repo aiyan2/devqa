@@ -1,18 +1,24 @@
 #!/usr/bin/env python3
  
-"""Simple HTTP Server With Upload.
+""" HTTP Server With Upload.
+Usage: 
+http client by curl or any browser
+--- upload, using example:
+curl -F file=@/etc/hosts 172.18.43.100:8003
 
-This module builds on BaseHTTPServer by implementing the standard GET
-and HEAD requests in a fairly straightforward manner.
+--- check integrity of the file
+aiyan@pc100:~$ curl -F file=@/var/www/html/test/1g 172.18.43.100:8003 -s | grep md5 -A 1
+<strong>Success:</strong>The md5:
+ cd573cfaace07e7949bc0c46028904ff
+aiyan@pc100:~$ md5sum /var/www/html/test/1g
+cd573cfaace07e7949bc0c46028904ff  /var/www/html/test/1g
 
-see: https://gist.github.com/UniIsland/3346170
+
 """
  
  
-__version__ = "0.1"
-__all__ = ["SimpleHTTPRequestHandler"]
-__author__ = "bones7456"
-__home_page__ = "http://li2z.cn/"
+__version__ = "1.1"
+__all__ = ["HTTPServer"]
  
 import os
 import posixpath
@@ -23,23 +29,17 @@ import shutil
 import mimetypes
 import re
 from io import BytesIO
+import hashlib
  
  
-class SimpleHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
+class HTTPServer(http.server.BaseHTTPRequestHandler):
  
-    """Simple HTTP request handler with GET/HEAD/POST commands.
+    """HTTP request handler with GET/HEAD/POST commands.
 
-    This serves files from the current directory and any of its
-    subdirectories.  The MIME type for files is determined by
-    calling the .guess_type() method. And can reveive file uploaded
-    by client.
-
-    The GET/HEAD/POST requests are identical except that the HEAD
-    request omits the actual contents of the file.
-
+   
     """
  
-    server_version = "SimpleHTTPWithUpload/" + __version__
+    server_version = "HTTPServer/" + __version__
  
     def do_GET(self):
         """Serve a GET request."""
@@ -79,7 +79,14 @@ class SimpleHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
         if f:
             self.copyfile(f, self.wfile)
             f.close()
-        
+    def pmd5sum(filename):          
+        md5_hash = hashlib.md5()
+        with open(filename,"rb") as f:
+        # Read and update hash in chunks of 4K
+            for byte_block in iter(lambda: f.read(4096),b""):
+                md5_hash.update(byte_block)
+            return (md5_hash.hexdigest())
+
     def deal_post_data(self):
         content_type = self.headers['content-type']
         if not content_type:
@@ -117,7 +124,9 @@ class SimpleHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
                     preline = preline[0:-1]
                 out.write(preline)
                 out.close()
-                return (True, "File '%s' upload success!" % fn)
+                psum = HTTPServer.pmd5sum(fn)
+                return (True, "The md5:\r\n %s \r\n" % psum)
+                #return (True, "File '%s' upload success!" % fn)
             else:
                 out.write(preline)
                 preline = line
@@ -285,7 +294,7 @@ class SimpleHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
         })
  
  
-def test(HandlerClass = SimpleHTTPRequestHandler,
+def test(HandlerClass = HTTPServer,
          ServerClass = http.server.HTTPServer):
     http.server.test(
     HandlerClass,
