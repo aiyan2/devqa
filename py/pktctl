@@ -1,0 +1,38 @@
+
+from scapy.all import *
+def tcp_test(ip, port, data):
+
+    #first hand shake  send SYN
+    #
+    #using sr1, not send as sr1 can receive reply content
+    ans = sr1(IP(dst=ip) / TCP(dport=port, sport=RandShort(), s
+eq=RandInt(), flags='S'), verbose=False)
+
+    # assuming ACK+SYN
+
+    # 对方回复的目标端口，就是我方使用的请求端口（上面随机生成
+的那个）
+    sport = ans[TCP].dport
+    s_seq = ans[TCP].ack
+    d_seq = ans[TCP].seq + 1
+
+    # 3rd , send ack
+    send(IP(dst=ip) / TCP(dport=port, sport=sport, ack=d_seq, s
+eq=s_seq, flags='A'), verbose=False)
+
+    # http-get request
+    send(IP(dst=ip)/TCP(dport=port, sport=sport, seq=s_seq, ack
+=d_seq, flags=24)/data, verbose=False)
+
+
+if __name__ == '__main__':
+    data = 'GET / HTTP/1.1\n'
+    data += 'Host: 172.18.43.100\n'
+    data += 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x
+64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93
+Safari/537.36\n'
+    data += 'Accept: text/html'
+    data += '\r\n\r\n'
+
+    tcp_test("172.18.43.100", 80, data)
+
