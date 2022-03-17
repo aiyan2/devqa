@@ -1,0 +1,182 @@
+====2019 DONE
+runas /user:Administrator "netsh.exe interface ip set address name="Local Area Connection" static 10.1.1.99 255.255.255.0 10.1.1.1"
+netsh.exe interface ip set address name="Network2" static <<SUBNET>>.99 255.255.255.0 <<SUBNET>>.1"
+
+net use * \\<<SUBNET>>.212\share_enc 
+
+netsh interface show interface 
+netsh interface set interface "ethernet0" admin=disable
+CertUtil -hashfile <path to file> MD5 
+C:\test3>ptime copy a.mp4 y: /Y
+
+Stress Test  ( Windows :)
+
+echo start.
+:start 
+curl https://18.213.95.172 -x 172.18.43.2:8080 -k
+timeout 1 
+goto start 
+
+
+
+ssh -Q kex  ==> key exchange algos
+ssh- Q key 
+ 
+
+ssh -vvv -oKexAlgorithms=diffie-hellman-group1-sha1 ...
+ssh -vvv -oHostKeyAlgorithms=ssh-dss ...
+$ sudo ip route del 172.16.0.0/24 via 192.168.122.1 dev ens3
+
+
+curl -x socks5://[user:password@]proxyhost[:port]/ ur
+C:\Users\john>curl -x socks5://\devqa\adu1:12345678@<<SUBNET>>.64:8090 172.18.2.169 
+C:\Users\john>curl -x \devqa\adu1:12345678@<<SUBNET>>.64:8080 172.18.2.169
+curl -p - --insecure  "ftp://82.45.34.23:21/CurlPutTest/" --user "testuser:testpassword" -T "C:\test\testfile.xml" --ftp-create-dirs 
+curl ftp://ftp@172.18.2.169 
+
+curl -X POST "http://httpbin.org/post" -H "accept: application/json"  -x http://adu1:12345678@<<SUBNET>>.201:8080
+waf-sql :             
+http://172.18.2.169/index.php?username=1'%20or%20'1'%20=%20'1&password=1'%20or%20'1'%20=%20'1 
+
+curl -x 172.18.43.64:8080 http://172.18.2.169/index.php?username=1'%20or%20'1'%20=%20'1&password=1'%20or%20'
+FOH: curl ftp://ftp@172.18.2.169/upload/ama/xmltest -x <<SUBNET>>.203:8080 -v
+
+ curl --data-bin @header.txt http://<<SUBNET>>.184:8005  -x <<SUBNET>>.203:8080
+
+curl -d'{"name":"<username>":"password":"<user password>")' -c cookies.txt -H "Content-Type: application/json" http://10.220.64/api/user/login
+curl -b cookies.txt http://10.220.64.6/api/case/test2/rerun 
+To disable Expect: 100 Continue 
+>curl -X POST -F file=@p.zip 172.18.43.99:8005  -v  -H "Expect:"
+
+
+ d de console timestamp enable
+
+ smbclient //smb-ubuntu.smb2016.lab/share -m SMB3 -k -e    < -k|--kerberos >  only useful in an Active Directory environment. 
+ smb@smb-vm:~$ smbclient //smb-ubuntu.smb2016.lab/share -m SMB3  -e  -W smb2016 -U u2 12345678 
+ smbclient //www.example.com/myshare -U hnelson -W EXAMPLE.COM -R host -k -d 3  
+ smbclient -t 10 //172.16.200.44/share1 -U Server:Username%Server:Password -c "cd sample; lcd /tmp; get clean1"    
+ smbclient -t 10 //<<SUBNET>>.216\share -W smb2016 -U u2:12345678 -c " lcd /tmp; get loop.bat "
+ smbclient //.. -W <workgroup> -U  ( user)  -c "cd sample; lcd /tmp; get clean1" 
+  
+ smbclient //<<SUBNET>>.216/share -W smb2016 -U u2 12345678 -c " lcd /tmp; get loop.bat"
+  $ ls -al | sort -k 5n
+
+ swaks --server 172.18.43.124 --from u1@devqa.lab --to u2@devqa.lab --header "Subject: Bug Test" --body "Test" --attach  /etc/hosts 
+
+while true; do { echo -e 'HTTP/1.1 200 OK\r\n'} | nc -l 8909; done; 
+ printf "GET /index.html HTTP/1.1\r\nHost: 172.18.2.169\r\n\r\n"|nc 172.18.43.34 8080
+
+https://wrong.host.badssl.com/  
+http://httpbin.org/status/<code>
+
+
+Nested LDAP: 
+
+Yes, using the LDAP_MATCHING_RULE_IN_CHAIN matching rule (OID 1.2.840.113556.1.4.1941). For example:
+
+(memberOf:1.2.840.113556.1.4.1941:=cn=group,cn=users,DC=devqa,dc=lab)
+
+$ ldapsearch -h 172.18.43.124 -p 389 -D "cn=adu2,cn=users,dc=devqa,dc=lab" -w 12345678 -b "dc=devqa,dc=lab" "(|(objectSid=S-1-5-21-129035274-2917195938-48910757-513)(objectSid=S-1-5-21-129035274-2917195938-48910757-1105))" dn objectSid
+
+
+ / # ps -eo | grep /bin/wa
+ 
+ # d sniffer  packet  any 'tcp[13]&2==2 and port 443' 4 
+ # d de authd fsso list
+ 
+
+ 
+ urlfilter priority
+==================
+  local-url > blacklist > forgigard > whitelist.
+  
+/tmp/wad # ls
+296.krb5.conf  419.krb5.conf  420.krb5.conf  persistent     user_info
+volatile
+
+
+/tmp/cifs_kt # ls
+1.0.379.cifskeytab  1.0.420.cifskeytab
+ 
+ # tcpdump  'port 8000 and host 172.18.43.184' -X 
+ 
+di sys csf --> Security Frabic Diag 
+di sys last-modify-files 
+di sys kill 
+# sysctl killall updated 
+# fnsysctl killall wad 
+# d firewall  proute list  ---> Policy Route 
+
+# d de authd  fsso  list
+# d test app fnbamd -1 
+-- How to clear users?
+#wad 110 to list and wad 111 to clear 
+for informer, if not effect,
+#diag de authd fsso clear 
+# diagnose wad memory ssh | grep ': now [^0]'  ⇒ not 0
+
+ # exec ha
+disconnect      Disconnect from HA cluster.
+manage          Slave cluster index.
+set-priority    Set HA priority.
+synchronize     HA synchronize commands.
+
+d sys ha checksum sh 
+d de app hatalk -1 
+diagnose sys ha reset-uptime 
+# get sys ha status
+
+diag sys ha  
+diag sys ha checksum show
+exec ha sy start 
+diag de app hasync /hatalk ...
+get system ha status
+diagnose sys ha showcsum
+execute ha synchronize config
+
+
+waf: 
+ #diagnose waf dump | grep 90300017
+
+
+ config cifs profile
+  edit "smb_keytab"
+        set server-credential-type credential-keytab 
+  config server-keytab
+            edit "host/smb-ubuntu.smb2016.lab@SMB2016.LAB"
+                set keytab "BQIAAABGAAIAC1NNQjIwMTYuTEFCAARob3N0ABZzbWItdWJ1bnR1LnNtYjIwMTYubGFiAAAAAVx3G/4DAAEACEP9dvJ6rr8TAAAAAwAAADoAAgALU01CMjAxNi5MQUIABGhvc3QAClNNQi1VQlVOVFUAAAABXHcb/gMAAQAIQ/128nquvxMAAAADAAAARgACAAtTTUIyMDE2LkxBQgAEaG9zdAAWc21iLXVidW50dS5zbWIyMDE2LmxhYgAAAAFcdxv+AwADAAhD/Xbyeq6/EwAAAAMAAAA6AAIAC1NNQjIwMTYuTEFCAARob3N0AApTTUItVUJVTlRVAAAAAVx3G/4DAAMACEP9dvJ6rr8TAAAAAwAAAE4AAgALU01CMjAxNi5MQUIABGhvc3QAFnNtYi11YnVudHUuc21iMjAxNi5sYWIAAAABXHcb/gMAEQAQJSfDuG5j/S9Mg7qjK+h0HAAAAAMAAABCAAIAC1NNQjIwMTYuTEFCAARob3N0AApTTUItVUJVTlRVAAAAAVx3G/4DABEAECUnw7huY/0vTIO6oyvodBwAAAADAAAAXgACAAtTTUIyMDE2LkxBQgAEaG9zdAAWc21iLXVidW50dS5zbWIyMDE2LmxhYgAAAAFcdxv+AwASACB86SIqn6UEsa1ZO0L+y+SYoWqD26QzbulXrJ29WURBrAAAAAMAAABSAAIAC1NNQjIwMTYuTEFCAARob3N0AApTTUItVUJVTlRVAAAAAVx3G/4DABIAIHzpIiqfpQSxrVk7Qv7L5JihaoPbpDNu6Vesnb1ZREGsAAAAAwAAAE4AAgALU01CMjAxNi5MQUIABGhvc3QAFnNtYi11YnVudHUuc21iMjAxNi5sYWIAAAABXHcb/gMAFwAQf4w3dSqfCkicOo1iDvU+2gAAAAMAAABCAAIAC1NNQjIwMTYuTEFCAARob3N0AApTTUItVUJVTlRVAAAAAVx3G/4DABcAEH+MN3UqnwpInDqNYg71PtoAAAADAAAANQABAAtTTUIyMDE2LkxBQgALU01CLVVCVU5UVSQAAAABXHcb/gMAAQAIQ/128nquvxMAAAADAAAANQABAAtTTUIyMDE2LkxBQgALU01CLVVCVU5UVSQAAAABXHcb/gMAAwAIQ/128nquvxMAAAADAAAAPQABAAtTTUIyMDE2LkxBQgALU01CLVVCVU5UVSQAAAABXHcb/gMAEQAQJSfDuG5j/S9Mg7qjK+h0HAAAAAMAAABNAAEAC1NNQjIwMTYuTEFCAAtTTUItVUJVTlRVJAAAAAFcdxv+AwASACB86SIqn6UEsa1ZO0L+y+SYoWqD26QzbulXrJ29WURBrAAAAAMAAAA9AAEAC1NNQjIwMTYuTEFCAAtTTUItVUJVTlRVJAAAAAFcdxv+AwAXABB/jDd1Kp8KSJw6jWIO9T7aAAAAAw=="
+            next
+            
+ === wad trouble shooting 
+ From Tony Zhang 
+diag deb en
+1)diag sys top <-- find the wad process id with highest memory usage
+
+2)diag test app wad 1000 <--- list all wad process, find the process id found in the step 1)
+                              rememebr the type number(should be 2) and index (for example 3)
+3)diag test app wad 22xy <----switch diag context to the highest memory usage wad process
+If the index number is 3 found in the step 2, the 22xy should be 2203
+after the command, you can found one output "Set diagnosis process: type=worker index=3 pid=188"
+then all the following diag commands will be sent to that process.
+
+3)diag test app wad 2
+  diag test app wad 3
+  diag test app wad 803
+  diag test app wad 22
+  diag test app wad 123
+  diag test app wad 223
+
+some command could have long output, in order to avoid interleaving the output, please input the cmd one by one.
+
+4) diag test app wad 124 ---->clear the current http sessions , break current connections
+
+check if the process's memory usage is lowered via step 1) after clear the http session
+and repeate the step 3) to collect the stats again to compare.
+
+5) if most system memeory is used by one wad process, restart the specific process is here
+  "diag test app wad 99" (after that, the diag context switched to the wad manager process)
+
+6) if step 5) is not executed, "diag test app wad 2000" to switch diag context to the wad manager process as default.
+
+diag deb dis
+
